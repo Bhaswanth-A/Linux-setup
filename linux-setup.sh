@@ -8,7 +8,7 @@
 
 function usage {
     # Print out usage of this script.
-    echo >&2 "usage: $0 [ROS distro (default: melodic)"
+    echo >&2 "usage: $0 [ROS distro (default: noetic)"
     echo >&2 "          [-h|--help] Print help message."
     exit 0
 }
@@ -28,7 +28,7 @@ while [ -n "$1" ] ; do
 done
 
 ROS_DISTRO=$1
-ROS_DISTRO=${ROS_DISTRO:="melodic"}
+ROS_DISTRO=${ROS_DISTRO:="noetic"}
 
 version=`lsb_release -sc`
 echo ""
