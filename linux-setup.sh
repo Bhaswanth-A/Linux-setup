@@ -81,18 +81,7 @@ then
 	python3-rosinstall \
 	ros-$ROS_DISTRO-desktop-full
 else
-   sudo apt install -y \
-	liburdfdom-tools \
-	python-rosdep \
-	python-rosinstall \
-	python-bloom \
-	python-rosclean \
-	python-wstool \
-	python-pip \
-	python-catkin-lint \
-	python-catkin-tools \
-	python-rosinstall \
-	ros-$ROS_DISTRO-desktop-full
+   exit 1
 fi
 
 # Only init if it has not already been done before
